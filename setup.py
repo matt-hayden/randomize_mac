@@ -11,7 +11,6 @@ setup(name='RandomizeMAC',
       packages=find_packages(exclude='contrib docs tests'.split()),
       entry_points = {
           'console_scripts': [
-              'wds=randomize_mac.cli:get_wireless_devices',
               'randomize_mac=randomize_mac.cli:randomize_networks',
               ]
           },

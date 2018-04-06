@@ -3,8 +3,7 @@ import hashlib
 
 from . import *
 
-macseed_exec = [str(PROJECT_ROOT / 'etc/macseed.sh')]
-macseed_exec = ['sudo']+macseed_exec # TODO
+macseed_exec = [ str(PROJECT_ROOT / 'etc/macseed.sh') ]
 
 def reseed():
     proc = run(macseed_exec+['reseed'])
